@@ -1,10 +1,15 @@
 import { Injectable } from '@angular/core';
 
 export class Shield {
+  public year : number = 0;
   constructor(public id: string, public color : string, public imageUrl: string) {}
 }
 export class Bucket {
   constructor(public year : number, public shields : Shield[]){}
+}
+
+export class YearOrShield {
+  constructor(public year : number, public shield? : Shield){}
 }
 
 @Injectable()
@@ -333,9 +338,45 @@ export class ShieldService {
         new Shield("2586",         "3", "https://img.bricklink.com/ItemImage/PT/3/2586.t1.png")]
       ),
     ];
+
+   
+    
   }
 
-  public getShields() : Bucket[] {
+  public getShieldsByYear() : Bucket[] {
     return this.buckets;
+  }
+
+  public getShieldsOnBaseplate(columns : number) : YearOrShield[][] {
+
+    var row : number = 0;
+    var counter = 0;
+    var shieldsOnBaseplate: YearOrShield[][] = [];
+    shieldsOnBaseplate[row] = [];
+
+    for (var bucket of this.buckets) {
+
+      if(counter >= columns){
+        counter = 0;
+        shieldsOnBaseplate[++row] = [];
+      }
+
+      counter++;
+      shieldsOnBaseplate[row].push(new YearOrShield(bucket.year));
+
+      for (var shield of bucket.shields) {
+
+        if(counter >= columns){
+          counter = 0;
+          shieldsOnBaseplate[++row] = [];
+        }
+        
+        counter++;
+        shieldsOnBaseplate[row].push(new YearOrShield(bucket.year, shield));
+      }
+    }
+
+   
+    return shieldsOnBaseplate;
   }
 }

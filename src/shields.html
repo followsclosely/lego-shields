@@ -1,6 +1,8 @@
-<mat-checkbox [(ngModel)]="showId"> show id</mat-checkbox>
+<mat-slide-toggle [(ngModel)]="showId">show id</mat-slide-toggle>
+&nbsp;&nbsp;
+<mat-slide-toggle [(ngModel)]="breakOnYear">break on year</mat-slide-toggle>
 
-<table>
+<table *ngIf="breakOnYear">
   <tr *ngFor="let bucket of buckets;">
     <th>{{bucket.year}}</th>
     <td *ngFor="let shield of bucket.shields;"> 
@@ -12,3 +14,16 @@
   </tr>
 </table>
 
+
+<table border="1" *ngIf="!breakOnYear">
+  <tr *ngFor="let row of shieldsOnBaseplate">
+    <td *ngFor="let bucket of row;"> 
+      <div *ngIf="!bucket.shield">
+        <b>{{bucket.year}}</b>
+      </div>
+      <div *ngIf="bucket.shield">
+        <img src="{{bucket.shield.imageUrl}}" />
+      </div>
+    </td>
+  </tr>
+</table>
