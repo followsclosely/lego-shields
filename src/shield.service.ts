@@ -8,7 +8,7 @@ export class Bucket {
   constructor(public year : number, public shields : Shield[]){}
 }
 
-export class YearOrShield {
+export class Grid {
   constructor(public year : number, public shield? : Shield){}
 }
 
@@ -347,11 +347,11 @@ export class ShieldService {
     return this.buckets;
   }
 
-  public getShieldsOnBaseplate(columns : number) : YearOrShield[][] {
+  public getShieldsOnBaseplate(columns : number) : Grid[][] {
 
     var row : number = 0;
     var counter = 0;
-    var shieldsOnBaseplate: YearOrShield[][] = [];
+    var shieldsOnBaseplate: Grid[][] = [];
     shieldsOnBaseplate[row] = [];
 
     for (var bucket of this.buckets) {
@@ -362,7 +362,7 @@ export class ShieldService {
       }
 
       counter++;
-      shieldsOnBaseplate[row].push(new YearOrShield(bucket.year));
+      shieldsOnBaseplate[row].push(new Grid(bucket.year));
 
       for (var shield of bucket.shields) {
 
@@ -372,7 +372,7 @@ export class ShieldService {
         }
         
         counter++;
-        shieldsOnBaseplate[row].push(new YearOrShield(bucket.year, shield));
+        shieldsOnBaseplate[row].push(new Grid(bucket.year, shield));
       }
     }
 

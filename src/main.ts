@@ -14,7 +14,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
-import { Bucket, ShieldService, YearOrShield } from './shield.service';
+import { Bucket, ShieldService, Grid } from './shield.service';
 
 @Component({
   selector: 'my-app',
@@ -37,7 +37,7 @@ export class App {
 
   buckets : Bucket[]; 
 
-  shieldsOnBaseplate: YearOrShield[][];
+  shieldsOnBaseplate: Grid[][];
   shieldsOnBaseplateColumns : number = 12;
   shieldsOnBaseplateValidColumns = [Array(100).fill(0).map((e, i) => i + 1)];
 

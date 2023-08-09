@@ -2,6 +2,8 @@
 &nbsp;&nbsp;
 <mat-slide-toggle [(ngModel)]="breakOnYear">break on year</mat-slide-toggle>
 &nbsp;&nbsp;
+<br>
+<br>
 
 <!--
 <mat-form-field>
@@ -32,6 +34,9 @@
       </div>
       <div *ngIf="bucket.shield">
         <img src="{{bucket.shield.imageUrl}}" />
+        <div *ngIf="showId">
+          <br><a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{bucket.shield.id}}#T=S&C={{bucket.shield.color}}">{{bucket.shield.id}}</a>
+        </div>
       </div>
     </td>
   </tr>
