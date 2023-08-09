@@ -1,12 +1,9 @@
-<button [disabled]="showId" mat-icon-button color="primary">
-  <mat-icon>zoom_out_map</mat-icon>
-</button>
-
 <table>
-  <tr>
-    <td *ngFor="let shield of shields; let y = index"> 
+  <tr *ngFor="let bucket of buckets;">
+    <th>{{bucket.year}}</th>
+    <td *ngFor="let shield of bucket.shields;"> 
       <img src="{{shield.imageUrl}}" />
-      <br>{{shield.id}}
+      <br><a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{shield.id}}">{{shield.id}}</a>
     </td>
   </tr>
 </table>
