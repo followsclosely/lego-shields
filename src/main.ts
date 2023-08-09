@@ -24,7 +24,7 @@ export class App {
   buckets : Bucket[]; 
 
   shieldsOnBaseplate: YearOrShield[][];
-  shieldsOnBaseplateColumns : number = 20;
+  shieldsOnBaseplateColumns : number = 28;
 
   showId : boolean = false;
   breakOnYear : boolean = false;
