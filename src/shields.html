@@ -1,0 +1,12 @@
+<button [disabled]="showId" mat-icon-button color="primary">
+  <mat-icon>zoom_out_map</mat-icon>
+</button>
+
+<table>
+  <tr>
+    <td *ngFor="let shield of shields; let y = index"> 
+      <img src="{{shield.imageUrl}}" />
+      <br>{{shield.id}}
+    </td>
+  </tr>
+</table>
