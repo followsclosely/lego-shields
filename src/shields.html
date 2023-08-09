@@ -1,9 +1,14 @@
+<input type="checkbox" [checked]="showId" (change)="showId = !showId" /> show id
+<br>
+<br>
 <table>
   <tr *ngFor="let bucket of buckets;">
     <th>{{bucket.year}}</th>
     <td *ngFor="let shield of bucket.shields;"> 
       <img src="{{shield.imageUrl}}" />
-      <br><a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{shield.id}}">{{shield.id}}</a>
+      <div *ngIf="showId">
+        <br><a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{shield.id}}">{{shield.id}}</a>
+      </div>
     </td>
   </tr>
 </table>
