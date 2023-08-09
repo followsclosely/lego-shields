@@ -7,7 +7,7 @@
     <td *ngFor="let shield of bucket.shields;"> 
       <img src="{{shield.imageUrl}}" />
       <div *ngIf="showId">
-        <br><a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{shield.id}}">{{shield.id}}</a>
+        <br><a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{shield.id}}#T=S&C={{shield.color}}">{{shield.id}}</a>
       </div>
     </td>
   </tr>
