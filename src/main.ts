@@ -9,7 +9,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 
 import {MatTabsModule} from '@angular/material/tabs';
-import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
@@ -20,7 +20,17 @@ import { Bucket, ShieldService, YearOrShield } from './shield.service';
   selector: 'my-app',
   providers: [ShieldService],
   standalone: true,
-  imports: [CommonModule, FormsModule, MatCheckboxModule, MatTabsModule, MatSlideToggleModule, MatGridListModule, MatInputModule, MatSelectModule, MatFormFieldModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    MatCheckboxModule,
+    MatTabsModule, 
+    MatSlideToggleModule, 
+    MatGridListModule, 
+    MatInputModule, 
+    MatSelectModule, 
+    MatFormFieldModule
+  ],
   templateUrl: 'shields.html',
 })
 export class App {

@@ -3,13 +3,13 @@
 <mat-slide-toggle [(ngModel)]="breakOnYear">break on year</mat-slide-toggle>
 &nbsp;&nbsp;
 
+<!--
 <mat-form-field>
   <mat-label>Shields/Row</mat-label>
   <mat-select>
     <mat-option *ngFor="let n of shieldsOnBaseplateValidColumns" [value]="shieldsOnBaseplateColumns">{{n}}</mat-option>
   </mat-select>
-</mat-form-field>
-
+</mat-form-field>-->
 
 <table *ngIf="breakOnYear">
   <tr *ngFor="let bucket of buckets;">
