@@ -8,6 +8,7 @@ import { Bucket, ShieldService } from './shield.service';
 
 @Component({
   selector: 'my-app',
+  providers: [ShieldService],
   standalone: true,
   imports: [CommonModule],
   templateUrl: 'shields.html',
