@@ -1,6 +1,5 @@
-<input type="checkbox" [checked]="showId" (change)="showId = !showId" /> show id
-<br>
-<br>
+<mat-checkbox [(ngModel)]="showId"> show id</mat-checkbox>
+
 <table>
   <tr *ngFor="let bucket of buckets;">
     <th>{{bucket.year}}</th>
@@ -12,3 +11,4 @@
     </td>
   </tr>
 </table>
+

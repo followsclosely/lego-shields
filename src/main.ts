@@ -3,6 +3,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 
+import { FormsModule } from '@angular/forms';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatTabsModule} from '@angular/material/tabs';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { Bucket, ShieldService } from './shield.service';
 
 
@@ -10,7 +15,7 @@ import { Bucket, ShieldService } from './shield.service';
   selector: 'my-app',
   providers: [ShieldService],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule, MatCheckboxModule, MatTabsModule],
   templateUrl: 'shields.html',
 })
 export class App {
