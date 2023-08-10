@@ -5,4 +5,9 @@ table, th, td {
   border: 1px solid;
   border-spacing: 1px;
   border-collapse: separate;
+  text-align: center;
+}
+
+.details {
+  vertical-align: top;
 }
