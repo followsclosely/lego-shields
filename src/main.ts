@@ -38,7 +38,7 @@ export class App {
   buckets : Bucket[]; 
 
   shieldsOnBaseplate: Grid[][];
-  shieldsOnBaseplateColumns : number = 12;
+  shieldsOnBaseplateColumns : number = 14;
   shieldsOnBaseplateValidColumns = [Array(100).fill(0).map((e, i) => i + 1)];
 
   showId : boolean = false;

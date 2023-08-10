@@ -356,7 +356,7 @@ export class ShieldService {
 
     for (var bucket of this.buckets) {
 
-      if(counter >= columns){
+      if(counter >= (columns-3) && bucket.year != 1992 || bucket.year > 2014){
         counter = 0;
         shieldsOnBaseplate[++row] = [];
       }
