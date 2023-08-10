@@ -1,9 +1,8 @@
 /* Add application styles & imports to this file! */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-mat-grid-tile {
-  background: lightblue;
-  min-height: 80px;
-  min-width: 80px;
-
+table, th, td {
+  border: 1px solid;
+  border-spacing: 1px;
+  border-collapse: separate;
 }
