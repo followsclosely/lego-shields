@@ -25,14 +25,17 @@ import { Bucket, ShieldService, Grid } from './shield.service';
 })
 export class App {
 
+  showId : boolean = false;
+  breakOnYear : boolean = false;
+  hideMissing : boolean = false;
+
   buckets : Bucket[]; 
 
   shieldsOnBaseplate: Grid[][];
   shieldsOnBaseplateColumns : number = 14;
   shieldsOnBaseplateValidColumns = [Array(100).fill(0).map((e, i) => i + 1)];
 
-  showId : boolean = false;
-  breakOnYear : boolean = false;
+  
 
   constructor(private shieldService : ShieldService){
     this.buckets = shieldService.getShieldsByYear();
