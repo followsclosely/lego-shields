@@ -4,13 +4,7 @@ import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 
 import { FormsModule } from '@angular/forms';
-import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
-
-import {MatTabsModule} from '@angular/material/tabs';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
@@ -23,13 +17,9 @@ import { Bucket, ShieldService, Grid } from './shield.service';
   imports: [
     CommonModule,
     FormsModule,
-    MatCheckboxModule,
-    MatTabsModule, 
     MatSlideToggleModule, 
     MatGridListModule, 
-    MatInputModule, 
-    MatSelectModule, 
-    MatFormFieldModule
+    MatInputModule
   ],
   templateUrl: 'shields.html',
 })
@@ -38,7 +28,7 @@ export class App {
   buckets : Bucket[]; 
 
   shieldsOnBaseplate: Grid[][];
-  shieldsOnBaseplateColumns : number = 15;
+  shieldsOnBaseplateColumns : number = 14;
   shieldsOnBaseplateValidColumns = [Array(100).fill(0).map((e, i) => i + 1)];
 
   showId : boolean = false;
