@@ -18,8 +18,8 @@
 <table *ngIf="breakOnYear">
   <tr *ngFor="let bucket of buckets;">
     <th>{{bucket.year}}</th>
-    <td *ngFor="let shield of bucket.shields;"> 
-      <img src="{{shield.imageUrl}}" [ngClass]="!hideMissing || shield.owned ? 'owned' : 'missing'"/>
+    <td *ngFor="let shield of bucket.shields;" [ngClass]="!hideMissing || shield.owned ? 'owned' : 'missing'"> 
+      <img src="{{shield.imageUrl}}" />
       <div *ngIf="showId">
         <a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{shield.id}}#T=S&C={{shield.color}}">{{shield.id}}</a>
       </div>
