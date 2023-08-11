@@ -4,6 +4,8 @@
 &nbsp;&nbsp;
 <mat-slide-toggle [(ngModel)]="hideMissing">hide missing</mat-slide-toggle>
 &nbsp;&nbsp;
+<mat-slide-toggle [(ngModel)]="hideOwned">hide owned</mat-slide-toggle>
+&nbsp;&nbsp;
 <br>
 <br>
 
@@ -18,7 +20,7 @@
 <table *ngIf="breakOnYear">
   <tr *ngFor="let bucket of buckets;">
     <th>{{bucket.year}}</th>
-    <td *ngFor="let shield of bucket.shields;" [ngClass]="!hideMissing || shield.owned ? 'owned' : 'missing'"> 
+    <td *ngFor="let shield of bucket.shields;" [ngClass]="(hideMissing && !shield.owned) || (hideOwned && shield.owned) ? 'hide' : 'na'"> 
       <img src="{{shield.imageUrl}}" />
       <div *ngIf="showId">
         <a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{shield.id}}#T=S&C={{shield.color}}">{{shield.id}}</a>
@@ -34,7 +36,7 @@
       <div *ngIf="!bucket.shield">
         <b>{{bucket.year}}</b>
       </div>
-      <div *ngIf="bucket.shield" [ngClass]="!hideMissing || bucket.shield.owned ? 'owned' : 'missing'">
+      <div *ngIf="bucket.shield" [ngClass]="(hideMissing && !bucket.shield.owned) || (hideOwned && bucket.shield.owned) ? 'hide' : 'na'">
         <img src="{{bucket.shield.imageUrl}}" />
         <div *ngIf="showId">
           <a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{bucket.shield.id}}#T=S&C={{bucket.shield.color}}">{{bucket.shield.id}}</a>

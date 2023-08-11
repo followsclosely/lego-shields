@@ -8,14 +8,14 @@ table, th, td {
   text-align: center;
 }
 
-.missing {
-  border:1px solid red
+.hide{
+  border:0px solid red
 }
 
-.missing img {
-  opacity:0.15;
+.hide img {
+  opacity:0.10;
 }
 
-.missing img:hover {
+.hide img:hover {
   opacity:1.0;
 }

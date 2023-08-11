@@ -28,6 +28,7 @@ export class App {
   showId : boolean = false;
   breakOnYear : boolean = false;
   hideMissing : boolean = false;
+  hideOwned : boolean = false;
 
   buckets : Bucket[]; 
 
