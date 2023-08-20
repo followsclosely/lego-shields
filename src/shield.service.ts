@@ -212,7 +212,8 @@ export class ShieldService {
       
         new Shield(false, "91884",      "150", "https://img.bricklink.com/ItemImage/PT/150/91884.t1.png"),
         new Shield(true, "3846",         "95", "https://img.bricklink.com/ItemImage/PT/95/91884.t1.png"),
-        new Shield(true, "3846",          "1", "https://img.bricklink.com/ItemImage/PT/1/3846.t1.png")]
+        new Shield(true, "3846",          "1", "https://img.bricklink.com/ItemImage/PT/1/3846.t1.png"),
+        new Shield(true, "98834pb02",    "11", "https://img.bricklink.com/ItemImage/PT/11/98834pb02.t1.png")]
       ),
       new Bucket(2015, [
         new Shield(false, "3846pb038",   "1", "https://img.bricklink.com/ItemImage/PT/1/3846pb038.t1.png"),
@@ -360,7 +361,7 @@ export class ShieldService {
 
     for (var bucket of this.buckets) {
 
-      if(counter >= (columns-1) || bucket.year == 2017){
+      if(counter >= (columns-1)){
         counter = 0;
         shieldsOnBaseplate[++row] = [];
       }
