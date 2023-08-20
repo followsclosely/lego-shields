@@ -8,7 +8,11 @@ import {MatInputModule} from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
-import { Bucket, ShieldService, Grid } from './shield.service';
+import {MatDialog, MAT_DIALOG_DATA, MatDialogModule, DialogPosition} from '@angular/material/dialog';
+
+import { Bucket, ShieldService, Grid, Shield } from './shield.service';
+
+import { ShieldDetailsComponent } from './shield-details/shield-details.component';
 
 @Component({
   selector: 'my-app',
@@ -19,7 +23,8 @@ import { Bucket, ShieldService, Grid } from './shield.service';
     FormsModule,
     MatSlideToggleModule, 
     MatGridListModule, 
-    MatInputModule
+    MatInputModule,
+    MatDialogModule
   ],
   templateUrl: 'shields.html',
 })
@@ -38,9 +43,21 @@ export class App {
 
   
 
-  constructor(private shieldService : ShieldService){
+  constructor(private shieldService : ShieldService, public dialog: MatDialog){
     this.buckets = shieldService.getShieldsByYear();
     this.shieldsOnBaseplate = shieldService.getShieldsOnBaseplate(this.shieldsOnBaseplateColumns);
+  }
+
+  openDialog(event: any, shield : Shield) {
+
+    let po: DialogPosition = { left: event.clientX + 'px', top: event.clientY + 'px'};
+
+    this.dialog.open(ShieldDetailsComponent, {
+      data: {
+        'shield': shield,
+      },
+      position: po,
+    });
   }
 
 }
