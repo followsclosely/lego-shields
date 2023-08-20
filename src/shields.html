@@ -37,7 +37,7 @@
         <b>{{bucket.year}}</b>
       </div>
       <div *ngIf="bucket.shield" [ngClass]="(hideMissing && !bucket.shield.owned) || (hideOwned && bucket.shield.owned) ? 'hide' : 'na'">
-        <img src="{{bucket.shield.imageUrl}}" />
+        <img src="{{bucket.shield.imageUrl}}" (click)="openDialog($event, bucket.shield)" />
         <div *ngIf="showId">
           <a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{bucket.shield.id}}#T=S&C={{bucket.shield.color}}">{{bucket.shield.id}}</a>
         </div>
