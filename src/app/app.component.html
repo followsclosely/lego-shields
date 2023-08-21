@@ -1,0 +1,47 @@
+<mat-slide-toggle [(ngModel)]="showId">show id</mat-slide-toggle>
+&nbsp;&nbsp;
+<mat-slide-toggle [(ngModel)]="breakOnYear">break on year</mat-slide-toggle>
+&nbsp;&nbsp;
+<mat-slide-toggle [(ngModel)]="hideMissing">hide missing</mat-slide-toggle>
+&nbsp;&nbsp;
+<mat-slide-toggle [(ngModel)]="hideOwned">hide owned</mat-slide-toggle>
+&nbsp;&nbsp;
+<br>
+<br>
+
+<!--
+<mat-form-field>
+  <mat-label>Shields/Row</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let n of shieldsOnBaseplateValidColumns" [value]="shieldsOnBaseplateColumns">{{n}}</mat-option>
+  </mat-select>
+</mat-form-field>-->
+
+<table *ngIf="breakOnYear">
+  <tr *ngFor="let bucket of buckets;">
+    <th>{{bucket.year}}</th>
+    <td *ngFor="let shield of bucket.shields;" [ngClass]="(hideMissing && !shield.owned) || (hideOwned && shield.owned) ? 'hide' : 'na'"> 
+      <img src="{{shield.imageUrl}}" />
+      <div *ngIf="showId">
+        <a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{shield.id}}#T=S&C={{shield.color}}">{{shield.id}}</a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+
+<table *ngIf="!breakOnYear">
+  <tr *ngFor="let row of shieldsOnBaseplate">
+    <td *ngFor="let bucket of row;"> 
+      <div *ngIf="!bucket.shield">
+        <b>{{bucket.year}}</b>
+      </div>
+      <div *ngIf="bucket.shield" [ngClass]="(hideMissing && !bucket.shield.owned) || (hideOwned && bucket.shield.owned) ? 'hide' : 'na'">
+        <img src="{{bucket.shield.imageUrl}}" />
+        <div *ngIf="showId">
+          <a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P={{bucket.shield.id}}#T=S&C={{bucket.shield.color}}">{{bucket.shield.id}}</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
