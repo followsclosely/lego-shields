@@ -199,7 +199,7 @@ export class ShieldService {
       new Bucket(2014, [
         new Shield(false, "75902pb05",  "120", "https://img.bricklink.com/ItemImage/PT/120/75902pb05.t1.png"),
         new Shield(true, "91884pb005",  "77", "https://img.bricklink.com/ItemImage/PT/77/91884pb005.t1.png"),
-        new Shield(false, "92747",       "51", "https://img.bricklink.com/ItemImage/PT/51/92747.t1.png"),
+        new Shield(true, "92747",       "51", "https://img.bricklink.com/ItemImage/PT/51/92747.t1.png"),
         new Shield(true, "92747pb02",   "15", "https://img.bricklink.com/ItemImage/PT/15/92747pb02.t1.png"),
         new Shield(true, "92747pb12",   "15", "https://img.bricklink.com/ItemImage/PT/15/92747pb12.t1.png"),
         new Shield(false, "91884",      "150", "https://img.bricklink.com/ItemImage/PT/150/91884.t1.png"),
@@ -297,9 +297,9 @@ export class ShieldService {
         new Shield(false, "75902pb23",   "85", "https://img.bricklink.com/ItemImage/PT/85/75902pb23.t1.png"),
         new Shield(true, "2586",        "69", "https://img.bricklink.com/ItemImage/PT/69/2586.t1.png"),
         new Shield(true, "3846",        "88", "https://img.bricklink.com/ItemImage/PT/88/3846.t1.png"),
-        new Shield(false, "30166pb02",    "1", "https://img.bricklink.com/ItemImage/PT/1/30166pb02.t1.png"),
+        new Shield(true, "30166pb02",    "1", "https://img.bricklink.com/ItemImage/PT/1/30166pb02.t1.png"),
         new Shield(true, " 30166pb02",  "85", "https://img.bricklink.com/ItemImage/PT/85/30166.t1.png"),
-        new Shield(false, "3846",       "159", "https://img.bricklink.com/ItemImage/PT/159/3846.t1.png"),
+        new Shield(true, "3846",       "159", "https://img.bricklink.com/ItemImage/PT/159/3846.t1.png"),
         new Shield(true, " 30166pb02",  "88", "https://img.bricklink.com/ItemImage/PT/88/30166.t1.png")]
       ),
       new Bucket(2022, [
