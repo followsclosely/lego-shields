@@ -22,12 +22,12 @@ export class ShieldService {
   constructor() {
     this.buckets = [
       new Bucket(1978, [
-        new Shield(false, "3846",         "9", "https://img.bricklink.com/ItemImage/PT/9/3846.t1.png"),
+        new Shield(true, "3846pb014",    "9", "https://img.bricklink.com/ItemImage/PT/9/3846pb014.t1.png"),
         new Shield(true, "3846pb011",    "9", "https://img.bricklink.com/ItemImage/PT/9/3846pb011.t1.png"),
         new Shield(false, "3846pb011eu",  "9", "https://img.bricklink.com/ItemImage/PT/9/3846pb011eu.t1.png"),
         new Shield(true, "3846pb012",    "9", "https://img.bricklink.com/ItemImage/PT/9/3846pb012.t1.png"),
         new Shield(true, "3846pb013",    "9", "https://img.bricklink.com/ItemImage/PT/9/3846pb013.t1.png"),
-        new Shield(true, "3846pb014",    "9", "https://img.bricklink.com/ItemImage/PT/9/3846pb014.t1.png")]
+       ]
       ),
       new Bucket(1979, [
         new Shield(true, "3846p47",      "9", "https://img.bricklink.com/ItemImage/PT/9/3846p47.t1.png"),
@@ -38,6 +38,9 @@ export class ShieldService {
       ),
       new Bucket(1980, [
         new Shield(false, "3846pb001",    "9", "https://img.bricklink.com/ItemImage/PT/9/3846pb001.t1.png")]
+      ),
+      new Bucket(1983, [
+        new Shield(false, "3846",         "9", "https://img.bricklink.com/ItemImage/PT/9/3846.t1.png")]
       ),
       new Bucket(1984, [
         new Shield(true, "3846p46",      "9", "https://img.bricklink.com/ItemImage/PT/9/3846p46.t1.png"),
@@ -59,8 +62,7 @@ export class ShieldService {
         new Shield(true, "2586p4b",      "9", "https://img.bricklink.com/ItemImage/PT/9/2586p4b.t1.png")]
       ),
       new Bucket(1994, [
-        new Shield(true, "2586px10",     "1", "https://img.bricklink.com/ItemImage/PT/1/2586px10.t1.png"),
-        new Shield(true, "3846p44b",     "9", "https://img.bricklink.com/ItemImage/PT/9/3846p44b.t1.png")]
+        new Shield(true, "2586px10",     "1", "https://img.bricklink.com/ItemImage/PT/1/2586px10.t1.png")]
       ),
       new Bucket(1995, [
         new Shield(true, "2586p4d",      "1", "https://img.bricklink.com/ItemImage/PT/1/2586p4d.t1.png"),
@@ -68,9 +70,9 @@ export class ShieldService {
       ),
       new Bucket(1997, [
         new Shield(true, "2586p4f",      "9", "https://img.bricklink.com/ItemImage/PT/9/2586p4f.t1.png"),
+        new Shield(true, "3846px7",      "9", "https://img.bricklink.com/ItemImage/PT/9/3846px7.t1.png"),
         new Shield(true, "2586pw1",      "2", "https://img.bricklink.com/ItemImage/PT/2/2586pw1.t1.png"),
-        new Shield(true, "2586px3",      "2", "https://img.bricklink.com/ItemImage/EXTT/5635.t1.png"),
-        new Shield(true, "3846px7",      "9", "https://img.bricklink.com/ItemImage/PT/9/3846px7.t1.png")]
+        new Shield(true, "2586px3",      "2", "https://img.bricklink.com/ItemImage/EXTT/5635.t1.png")]
       ),
       new Bucket(2000, [
         new Shield(true, "2586p4g",      "9", "https://img.bricklink.com/ItemImage/PT/9/2586p4g.t1.png"),
