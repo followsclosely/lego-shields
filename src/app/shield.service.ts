@@ -60,7 +60,7 @@ export class ShieldService {
       ),
       new Bucket(1994, [
         new Shield(true, "2586px10",     "1", "https://img.bricklink.com/ItemImage/PT/1/2586px10.t1.png"),
-        new Shield(false, "3846p44b",     "9", "https://img.bricklink.com/ItemImage/PT/9/3846p44b.t1.png")]
+        new Shield(true, "3846p44b",     "9", "https://img.bricklink.com/ItemImage/PT/9/3846p44b.t1.png")]
       ),
       new Bucket(1995, [
         new Shield(true, "2586p4d",      "1", "https://img.bricklink.com/ItemImage/PT/1/2586p4d.t1.png"),
