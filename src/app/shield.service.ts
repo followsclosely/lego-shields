@@ -40,7 +40,7 @@ export class ShieldService {
         new Shield(false, "3846pb001",    "9", "https://img.bricklink.com/ItemImage/PT/9/3846pb001.t1.png")]
       ),
       new Bucket(1983, [
-        new Shield(false, "3846",         "9", "https://img.bricklink.com/ItemImage/PT/9/3846.t1.png")]
+        new Shield(true, "3846",         "9", "https://img.bricklink.com/ItemImage/PT/9/3846.t1.png")]
       ),
       new Bucket(1984, [
         new Shield(true, "3846p46",      "9", "https://img.bricklink.com/ItemImage/PT/9/3846p46.t1.png"),
@@ -199,7 +199,7 @@ export class ShieldService {
         new Shield(true, "92747pb10",   "15", "https://img.bricklink.com/ItemImage/PT/15/92747pb10.t1.png")]
       ),
       new Bucket(2014, [
-        new Shield(false, "75902pb05",  "120", "https://img.bricklink.com/ItemImage/PT/120/75902pb05.t1.png"),
+        new Shield(true, "75902pb05",  "120", "https://img.bricklink.com/ItemImage/PT/120/75902pb05.t1.png"),
         new Shield(true, "91884pb005",  "77", "https://img.bricklink.com/ItemImage/PT/77/91884pb005.t1.png"),
         new Shield(true, "92747",       "51", "https://img.bricklink.com/ItemImage/PT/51/92747.t1.png"),
         new Shield(true, "92747pb02",   "15", "https://img.bricklink.com/ItemImage/PT/15/92747pb02.t1.png"),
@@ -224,7 +224,7 @@ export class ShieldService {
         new Shield(true, "92747",       "15", "https://img.bricklink.com/ItemImage/PT/15/92747.t1.png"),
         new Shield(false, "2958pb059",   "11", "https://img.bricklink.com/ItemImage/PT/11/2958pb059.t1.png"),
         new Shield(true, "75902",       "11", "https://img.bricklink.com/ItemImage/PT/11/75902.t1.png"),
-        new Shield(false, "3846pb038",   "1", "https://img.bricklink.com/ItemImage/PT/1/3846pb038.t1.png")]
+        new Shield(true, "3846pb038",   "1", "https://img.bricklink.com/ItemImage/PT/1/3846pb038.t1.png")]
       ),
       new Bucket(2016, [
         new Shield(false, "3846pb041",   "86", "https://img.bricklink.com/ItemImage/PT/86/3846pb041.t1.png"),
@@ -296,7 +296,7 @@ export class ShieldService {
         new Shield(false, "75902pb20",   "85", "https://img.bricklink.com/ItemImage/PT/85/75902pb20.t1.png"),
         new Shield(true, "75902pb21",   "85", "https://img.bricklink.com/ItemImage/PT/85/75902pb21.t1.png"),
         new Shield(true, "75902pb22",   "63", "https://img.bricklink.com/ItemImage/PT/63/75902pb22.t1.png"),
-        new Shield(false, "75902pb23",   "85", "https://img.bricklink.com/ItemImage/PT/85/75902pb23.t1.png"),
+        new Shield(true, "75902pb23",   "85", "https://img.bricklink.com/ItemImage/PT/85/75902pb23.t1.png"),
         new Shield(true, "2586",        "69", "https://img.bricklink.com/ItemImage/PT/69/2586.t1.png"),
         new Shield(true, "3846",        "88", "https://img.bricklink.com/ItemImage/PT/88/3846.t1.png"),
         new Shield(true, "30166pb02",    "1", "https://img.bricklink.com/ItemImage/PT/1/30166pb02.t1.png"),
