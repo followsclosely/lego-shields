@@ -10,13 +10,17 @@ export class AppComponent {
   title = 'lego-shields';
 
   showId : boolean = false;
-  hideMissing : boolean = false;
+  hideMissing : boolean = true;
   hideOwned : boolean = false;
 
   shieldsOnBaseplate: Shield[][];
-  shieldsOnBaseplateColumns : number = 12;
+  shieldsOnBaseplateColumns : number = 16;
   
   constructor(private shieldService : ShieldService){
-    this.shieldsOnBaseplate = shieldService.getShieldsOnBaseplate(this.shieldsOnBaseplateColumns);
+    this.shieldsOnBaseplate = this.shieldService.getShieldsOnBaseplate(this.shieldsOnBaseplateColumns);
+  }
+
+  update(){
+    this.shieldsOnBaseplate = this.shieldService.getShieldsOnBaseplate(this.shieldsOnBaseplateColumns);
   }
 }
