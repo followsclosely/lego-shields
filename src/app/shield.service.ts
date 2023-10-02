@@ -56,7 +56,7 @@ export class ShieldService {
       new Shield(false, "22385pb036", "95", "https://img.bricklink.com/ItemImage/PT/95/22385pb036.t1.png"),
       new Shield(true, "22385pb037", "18", "https://img.bricklink.com/ItemImage/PT/18/22385pb037.t1.png"),
       new Shield(true, "22385pb038", "18", "https://img.bricklink.com/ItemImage/PT/18/22385pb038.t1.png"),
-      new Shield(false, "22385pb039", "18", "https://img.bricklink.com/ItemImage/PT/18/22385pb039.t1.png"),
+      new Shield(true, "22385pb039", "18", "https://img.bricklink.com/ItemImage/PT/18/22385pb039.t1.png"),
       new Shield(true, "22385pb040", "18", "https://img.bricklink.com/ItemImage/PT/18/22385pb040.t1.png"),
       new Shield(true, "22385pb041", "18", "https://img.bricklink.com/ItemImage/PT/18/22385pb041.t1.png"),
       new Shield(true, "22385pb042", "18", "https://img.bricklink.com/ItemImage/PT/18/22385pb042.t1.png"),
