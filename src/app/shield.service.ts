@@ -266,7 +266,7 @@ export class ShieldService {
       ),
       new Bucket(2018, [
         new Shield(false, "3846pb046",   "11", "https://img.bricklink.com/ItemImage/PT/11/3846pb046.t1.png"),
-        new Shield(false, "3846pb056",   "86", "https://img.bricklink.com/ItemImage/PT/86/3846pb056.t1.png"),
+        new Shield(true, "3846pb056",   "86", "https://img.bricklink.com/ItemImage/PT/86/3846pb056.t1.png"),
         new Shield(true, "35035",       "77", "https://img.bricklink.com/ItemImage/PT/77/35035.t1.png"),
         new Shield(true, "75902pb12",  "115", "https://img.bricklink.com/ItemImage/PT/115/75902pb12.t1.png"),
         new Shield(true, "75902",        "5", "https://img.bricklink.com/ItemImage/PT/5/75902.t1.png"),
