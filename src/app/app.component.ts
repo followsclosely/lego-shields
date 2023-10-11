@@ -10,8 +10,8 @@ export class AppComponent {
   title = 'lego-shields';
 
   showId : boolean = false;
-  hideMissing : boolean = true;
-  hideOwned : boolean = false;
+  hideMissing : boolean = false;
+  hideOwned : boolean = true;
 
   shieldsOnBaseplate: Shield[][];
   shieldsOnBaseplateColumns : number = 16;
