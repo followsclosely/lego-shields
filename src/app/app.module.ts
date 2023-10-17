@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +17,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-
+    MatDialogModule,
+    MatButtonModule,
     FormsModule,
     MatSlideToggleModule,
   ],
