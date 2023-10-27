@@ -133,7 +133,7 @@ export class ShieldService {
       new Shield(true, "22385pb108", "12", "https://img.bricklink.com/ItemImage/PT/12/22385pb108.t1.png"),
       new Shield(true, "22385pb109", "17", "https://img.bricklink.com/ItemImage/PT/17/22385pb109.t1.png"),
       new Shield(true, "22385pb110", "12", "https://img.bricklink.com/ItemImage/PT/12/22385pb110.t1.png"),
-      new Shield(false, "22385pb111", "108", "https://img.bricklink.com/ItemImage/PT/108/22385pb111.t1.png"),
+      new Shield(true, "22385pb111", "108", "https://img.bricklink.com/ItemImage/PT/108/22385pb111.t1.png"),
       new Shield(true, "22385pb112", "14", "https://img.bricklink.com/ItemImage/PT/14/22385pb112.t1.png"),
       new Shield(true, "22385pb113", "17", "https://img.bricklink.com/ItemImage/PT/17/22385pb113.t1.png"),
       new Shield(true, "22385pb114", "51", "https://img.bricklink.com/ItemImage/PT/51/22385pb114.t1.png"),
@@ -185,12 +185,11 @@ export class ShieldService {
       new Shield(true, "22385pb156", "7", "https://img.bricklink.com/ItemImage/PT/7/22385pb156.t1.png"),
       new Shield(true, "22385pb157", "65", "https://img.bricklink.com/ItemImage/PT/65/22385pb157.t1.png"),
       new Shield(true, "22385pb158", "65", "https://img.bricklink.com/ItemImage/PT/65/22385pb158.t1.png"),
-      new Shield(false, "22385pb159", "65", "https://img.bricklink.com/ItemImage/PT/65/22385pb159.t1.png"),
+      new Shield(true, "22385pb159", "65", "https://img.bricklink.com/ItemImage/PT/65/22385pb159.t1.png"),
       new Shield(true, "22385pb160", "65", "https://img.bricklink.com/ItemImage/PT/65/22385pb160.t1.png"),
       new Shield(true, "22385pb161", "65", "https://img.bricklink.com/ItemImage/PT/65/22385pb161.t1.png"),
       new Shield(true, "n/a", "", "")
     ];
-    
   }
 
   public getShieldsOnBaseplate(columns : number) : Shield[][] {
