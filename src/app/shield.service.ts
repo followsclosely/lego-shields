@@ -337,6 +337,12 @@ export class ShieldService {
         new Shield(true, "2586",         "3", "https://img.bricklink.com/ItemImage/PT/3/2586.t1.png"),
         new Shield(true, "2586pb010",   "86", "https://img.bricklink.com/ItemImage/PT/86/2586pb010.t1.png")]
       )
+      ,
+      new Bucket(2023, [
+        new Shield(true, "71045-1",    "86", "https://img.bricklink.com/ItemImage/PT/86/2586.t1.png"),//Basil the Bat Lord
+        new Shield(true, "21252-1",    "86", "https://img.bricklink.com/ItemImage/PT/86/2586.t1.png"),//Minecraft #21252
+      ] 
+      )
     ];
     
   }
