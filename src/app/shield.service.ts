@@ -298,7 +298,7 @@ export class ShieldService {
         new Shield(true, "75902pb22",   "63", "https://img.bricklink.com/ItemImage/PT/63/75902pb22.t1.png"),
         new Shield(true, "75902pb23",   "85", "https://img.bricklink.com/ItemImage/PT/85/75902pb23.t1.png"),
         new Shield(true, "2586",        "69", "https://img.bricklink.com/ItemImage/PT/69/2586.t1.png"),
-        new Shield(false, "3846",        "88", "https://img.bricklink.com/ItemImage/PT/88/3846.t1.png"),
+        new Shield(true, "3846",        "88", "https://img.bricklink.com/ItemImage/PT/88/3846.t1.png"),
         new Shield(true, "3846",       "159", "https://img.bricklink.com/ItemImage/PT/159/3846.t1.png"),
         new Shield(true, "2586pb009",   "69", "https://img.bricklink.com/ItemImage/PT/69/2586pb009.t1.png"),
         new Shield(true, "30166pb02",    "1", "https://img.bricklink.com/ItemImage/PT/1/30166pb02.t1.png"),
@@ -338,9 +338,9 @@ export class ShieldService {
         new Shield(true, "2586pb010",   "86", "https://img.bricklink.com/ItemImage/PT/86/2586pb010.t1.png")]
       )
       ,
-      new Bucket(2023, [
-        new Shield(true, "71045-1",    "86", "https://img.bricklink.com/ItemImage/PT/86/2586.t1.png"),//Basil the Bat Lord
-        new Shield(true, "21252-1",    "86", "https://img.bricklink.com/ItemImage/PT/86/2586.t1.png"),//Minecraft #21252
+      new Bucket(2024, [
+        new Shield(false, "71045-1",    "5", "https://img.bricklink.com/ItemImage/PT/5/3022.t1.png"),//Basil the Bat Lord
+        new Shield(false, "21252-1",    "5", "https://img.bricklink.com/ItemImage/PT/5/3022.t1.png"),//Minecraft #21252
       ] 
       )
     ];
@@ -380,7 +380,6 @@ export class ShieldService {
       }
     }
 
-   
     return shieldsOnBaseplate;
   }
 }
