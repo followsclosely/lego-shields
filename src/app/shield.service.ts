@@ -339,9 +339,9 @@ export class ShieldService {
       )
       ,
       new Bucket(2024, [
-        new Shield(false, "71045-1",    "5", "https://img.bricklink.com/ItemImage/PT/5/3022.t1.png"),//Basil the Bat Lord
-        new Shield(false, "21252-1",    "5", "https://img.bricklink.com/ItemImage/PT/5/3022.t1.png"),//Minecraft #21252
         new Shield(false, "71804-1",    "5", "https://img.bricklink.com/ItemImage/PT/5/3022.t1.png"),//Arin's Battle Mech #71804 and #71809
+        new Shield(false, "26603pb374",    "86", "https://img.bricklink.com/P/86/26603pb374.jpg"),//Minecraft #21252
+        new Shield(false, "71045-1",    "5", "https://img.bricklink.com/ItemImage/PT/5/3022.t1.png"),//Basil the Bat Lord
       ] 
       )
     ];
