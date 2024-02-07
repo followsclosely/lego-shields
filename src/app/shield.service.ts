@@ -212,7 +212,7 @@ export class ShieldService {
         new Shield(true, "18836pb01",   "115", "https://img.bricklink.com/ItemImage/PT/115/18836pb01.t1.png"),
         new Shield(true, "75902pb06",   "11", "https://img.bricklink.com/ItemImage/PT/11/75902pb06.t1.png"),
         new Shield(true, "75902pb07",   "11", "https://img.bricklink.com/ItemImage/PT/11/75902pb07.t1.png"),
-        new Shield(false, "92747pb03",   "15", "https://img.bricklink.com/ItemImage/PT/15/92747pb03.t1.png"),
+        new Shield(true, "92747pb03",   "15", "https://img.bricklink.com/ItemImage/PT/15/92747pb03.t1.png"),
         new Shield(true, "92747pb04",   "15", "https://img.bricklink.com/ItemImage/PT/15/92747pb04.t1.png"),
         new Shield(true, "92747pb05",   "51", "https://img.bricklink.com/ItemImage/PT/51/92747pb05.t1.png"),
         new Shield(true, "92747pb06",   "51", "https://img.bricklink.com/ItemImage/PT/51/92747pb06.t1.png"),
@@ -339,9 +339,10 @@ export class ShieldService {
       )
       ,
       new Bucket(2024, [
-        new Shield(false, "71804-1",    "5", "https://img.bricklink.com/ItemImage/PT/5/3022.t1.png"),//Arin's Battle Mech #71804 and #71809
-        new Shield(false, "26603pb374",    "86", "https://img.bricklink.com/P/86/26603pb374.jpg"),//Minecraft #21252
-        new Shield(false, "71045-1",    "5", "https://img.bricklink.com/ItemImage/PT/5/3022.t1.png"),//Basil the Bat Lord
+        new Shield(true, "71804-1",     "5", "https://img.bricklink.com/ItemImage/PT/5/3022.t1.png"),//Arin's Battle Mech #71804 and #71809
+        new Shield(true, "26603pb374", "86", "https://img.bricklink.com/P/86/26603pb374.jpg"),//Minecraft #21252
+        new Shield(true, "2586pb011",   "5", "https://img.bricklink.com/P/86/2586pb011.jpg"),//Basil the Bat Lord
+        new Shield(false, "10322-1",    "1", "https://img.bricklink.com/ItemImage/PT/1/2586.t1.png"), //Painted Shield from Town Square #10322
       ] 
       )
     ];
