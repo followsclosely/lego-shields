@@ -342,7 +342,7 @@ export class ShieldService {
         new Shield(true, "71804-1",     "5", "https://img.bricklink.com/ItemImage/PT/5/3022.t1.png"),//Arin's Battle Mech #71804 and #71809
         new Shield(true, "26603pb374", "86", "https://img.bricklink.com/P/86/26603pb374.jpg"),//Minecraft #21252
         new Shield(true, "2586pb011",   "5", "https://img.bricklink.com/P/86/2586pb011.jpg"),//Basil the Bat Lord
-        new Shield(false, "10322-1",    "1", "https://img.bricklink.com/ItemImage/PT/1/2586.t1.png"), //Painted Shield from Town Square #10322
+        new Shield(false, "10322-1",    "1", "https://img.bricklink.com/ItemImage/PT/5/3021.t1.png"), //Painted Shield from Town Square #10322
       ] 
       )
     ];
